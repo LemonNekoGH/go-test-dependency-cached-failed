@@ -1,5 +1,10 @@
 # Failed because cache
-Try to run test.
+Try to run test singly.
+```bash
+go test -run ^TestA$ gotestdependencycachedfailed && go test -run ^TestB$ gotestdependencycachedfailed
+```
+You will see both test passed.  
+Try to run all test in one process.
 ```bash
 $ go test .
 ```
